@@ -16,9 +16,7 @@ index = recursive_binary_search(arr, target1, 0, len(arr) - 1)
 print(f"{target1} found at index {index}" if index != -1 else
 f"{target1} not found")
 
-## Repeat for other search methods and for target2
-#Note, remember that the call parameters for iterative_binary_search and
-#sequential_search are: search(arr, target)
+# Repeat for other search methods and for target2
 
 #Target 2
 index = recursive_binary_search(arr, target2, 0, len(arr) - 1)
