@@ -1,5 +1,5 @@
 #Random Numbers branch
-from search_algorithms import recursive_binary_search, iterative_binary_search, sequential_binary_search
+from search_algorithms import recursive_binary_search, iterative_binary_search, sequential_search
 import random
 
 arr = [random.randint(1, 100) for _ in range(20)]
@@ -17,5 +17,8 @@ index = iterative_binary_search(arr, target)
 print(f"{target} found at index {index}" if index != -1 else
 f"{target} not found")
 
-
+#Sequential Binary Search
+index = sequential_search(arr, target)
+print(f"{target} found at index {index}" if index != -1 else
+f"{target} not found")
 
