@@ -1,24 +1,6 @@
-#Random Numbers branch
+#Rate of Growth branch
 from search_algorithms import recursive_binary_search, iterative_binary_search, sequential_search
+import time
 import random
 
-#Create a sorted array and a target value
-arr = sorted([random.randint(1, 1000000) for _ in range(20)])
-target = random.choice(arr) if random.random() < 0.5 else 999 # 50% chance of failure
-
-
-#Recursive Binary Search
-index = recursive_binary_search(arr, target, 0, len(arr) - 1)
-print(f"{target} found at index {index}" if index != -1 else
-f"{target} not found")
-
-#Iterative Binary Search
-index = iterative_binary_search(arr, target)
-print(f"{target} found at index {index}" if index != -1 else
-f"{target} not found")
-
-#Sequential Binary Search
-index = sequential_search(arr, target)
-print(f"{target} found at index {index}" if index != -1 else
-f"{target} not found")
-
+dataSize = [5000, 50000, 100000, 150000, 1000000]
