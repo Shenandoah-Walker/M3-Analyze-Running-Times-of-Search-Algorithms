@@ -2,8 +2,8 @@
 from search_algorithms import recursive_binary_search, iterative_binary_search, sequential_search
 import random
 
-arr = [random.randint(1, 100) for _ in range(20)]
-arr = sorted([random.randint(1, 1000000) for _ in range(N)])
+#Create a sorted array and a target value
+arr = sorted([random.randint(1, 1000000) for _ in range(20)])
 target = random.choice(arr) if random.random() < 0.5 else 999 # 50% chance of failure
 
 
